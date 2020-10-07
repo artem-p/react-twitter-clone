@@ -3,14 +3,8 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
+    <div className="app">
         <h1>Twitter clone</h1>
-      </header>
-
-      <main>
-
-      </main>
     </div>
   );
 }
