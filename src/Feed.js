@@ -3,6 +3,7 @@ import "./Feed.css";
 import TweetBox from './TweetBox';
 import Post from "./Post";
 
+
 function Feed() {
     return (
         <div className="feed">
@@ -11,6 +12,8 @@ function Feed() {
             </div>
 
             <TweetBox />
+
+            <Post />
         </div>
     )
 }
