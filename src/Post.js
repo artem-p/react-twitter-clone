@@ -21,7 +21,7 @@ function Post({ displayName, username, verified, text, image, avatar }) {
                     <div className="post__headerText">
                         <h3>
                             Rafeh Qazi{" "}
-                            <span>
+                            <span className="post__headerSpecial">
                                 <VerifiedUserIcon className="post__badge"></VerifiedUserIcon>
                                 @cleverqazi
                             </span>
@@ -31,16 +31,15 @@ function Post({ displayName, username, verified, text, image, avatar }) {
                     <div className="post__headerDescription">
                         <p>I challenge you to build a Twitter clone!</p>
                     </div>
+                </div>
 
+                <img src="https://picsum.photos/500/300"></img>
 
-                    <img src="https://picsum.photos/500/300"></img>
-
-                    <div className="post__footer">
-                        <ChatBubbleOutlineIcon fontSize="small" />
-                        <RepeatIcon fontSize="small" />
-                        <FavoriteBorderIcon fontSize="small" />
-                        <PublishIcon fontSize="small" />
-                    </div>
+                <div className="post__footer">
+                    <ChatBubbleOutlineIcon fontSize="small" />
+                    <RepeatIcon fontSize="small" />
+                    <FavoriteBorderIcon fontSize="small" />
+                    <PublishIcon fontSize="small" />
                 </div>
             </div>
         </div>
