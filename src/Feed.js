@@ -22,14 +22,16 @@ function Feed() {
 
             <TweetBox />
 
-            <Post 
-                avatar="https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/284832/settings_images/rLlCifhXRJiT0RoN2FjK_Logo_roundbackground_black.png"
-                displayName="Rafeh Qazi"
-                username="cleverqazi"
-                verified
-                text="I challenge you to build a Twitter clone!"
-                image="https://picsum.photos/500/300"
-            />
+            {posts.map(post => (
+                <Post 
+                    avatar={post.avatar}
+                    displayName={post.displayName}
+                    username={post.username}
+                    verified={post.verified}
+                    text={post.text}
+                    image={post.image}
+                />
+            ))}
         </div>
     )
 }
